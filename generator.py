@@ -20,7 +20,7 @@ class Generator:
         
         # key word arguments that are provided to the model.generate()function
         # Includes, inputs, max_tokens, streamer, temparature
-        generation_kwargs = dict(inputs, streamer=self.streamer, max_new_tokens=64, temperature=0.1)
+        generation_kwargs = dict(inputs, streamer=self.streamer, max_new_tokens=config.max_token, temperature=0.1)
         
         # Starting the thread with the stream
         thread = Thread(target=self.model.generate, kwargs=generation_kwargs)

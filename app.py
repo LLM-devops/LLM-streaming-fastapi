@@ -27,7 +27,7 @@ generator = Generator(model = model,
 async def root():
     return {"message": "Embedding model is online."}
 
-@app.get('/query-stream/')
+@app.get('/query-stream')
 async def stream(query: str):
     return StreamingResponse(generator.response_generator(query), media_type='text/event-stream')
 

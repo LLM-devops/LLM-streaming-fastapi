@@ -5,4 +5,5 @@ asyncio
 fastapi
 pydantic
 uvicorn
+accelerate
 

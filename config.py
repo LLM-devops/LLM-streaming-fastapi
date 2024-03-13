@@ -10,12 +10,11 @@ prompt_template = """
                     # You are assistant that behaves very professionally. 
                     # You will only provide the answer if you know the answer. If you do not know the answer, you will say I dont know. 
                     
-                    # ###Human: {instruction},
-                    # ###Assistant: 
+                    Instruction: {instruction}
+                    Answer: 
                   """
 # CPU or cuda ?
 device = "cuda"
 
-
 # Maximum number of tokens
-max_token = 1000
+max_token = 512
