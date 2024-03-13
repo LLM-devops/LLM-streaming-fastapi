@@ -13,8 +13,8 @@ prompt_template = """
                     # ###Human: {instruction},
                     # ###Assistant: 
                   """
-# CPU or GPU ?
-device = "cpu"
+# CPU or cuda ?
+device = "cuda"
 
 # Maximum number of tokens
 max_token = 1000
