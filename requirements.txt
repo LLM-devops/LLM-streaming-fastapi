@@ -5,5 +5,4 @@ asyncio
 fastapi
 pydantic
 uvicorn
-gunicorn
 

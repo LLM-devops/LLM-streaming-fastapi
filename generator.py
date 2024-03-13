@@ -3,7 +3,6 @@ import asyncio
 import os
 import config
 
-
 class Generator:
     
     def __init__(self,  model, tokenizer, streamer, streamer_queue):
