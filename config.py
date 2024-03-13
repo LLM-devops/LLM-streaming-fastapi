@@ -1,5 +1,5 @@
 # Model hub name
-model_name = "google/gemma-2b-it"
+model_name = "venkycs/phi-2-instruct"
 # Model local path
 model_path = model_name.split('/')[1] + '-model'
 # Tokenizer local path
@@ -15,6 +15,9 @@ prompt_template = """
                   """
 # CPU or cuda ?
 device = "cuda"
+
+# Token access
+
 
 # Maximum number of tokens
 max_token = 1000
